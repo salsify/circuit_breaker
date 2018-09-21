@@ -58,7 +58,6 @@ describe CircuitBreaker do
       handler.logger = Logger.new(STDOUT)
       handler.failure_threshold = 5
       handler.failure_timeout = 5
-      handler.invocation_timeout = 1
       handler.excluded_exceptions = [NotFoundException]
     end
 
